@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="./images/logo.png" alt="Pomodoro"></a>
+        <p class="headerText">Seu foco é o nosso objetivo!</p>
+        <p><a href="#" class="settings" onclick="Modal.open()">Configurações</a></p>
+    </header>
+    <main>
+        <div class="options">
+            <button onclick="pomodoro()" id="pomodoroButton" class="highlight">Pomodoro</button>
+            <button onclick="shortBreak()" id="shortBreakButton">Pausa pequena</button>
+            <button onclick="longBreak()" id="longBreakButton">Pausa grande</button>
+        </div>
+        <div>
+            <h1 id="counter">25:00</h1>
+        </div>
+        <div class="btns">
+            <button id="start" class='buttons' onclick="start()" tabindex="1">Começar</button>
+            <button id="pause" class='buttons' onclick="pause()">Pausar</button>
+            <button id="stop" class='buttons' onclick="stop()">Parar</button>
+        </div>
+        <div class="modal-overlay">
+            <div class="modal">
+                <label for="pomodoro">Pomodoro</label>
+                <input type="number" id="pomodoro" name="pomodoro" value="25">
+            </div>
+            <div class="modal">
+                <label for="shortBreak">Pausa pequena</label>
+                <input type="number" id="shortBreak" name="shortBreak" value="5">
+            </div>
+            <div class="modal">
+                <label for="longBreak">Pausa longa</label>
+                <input type="number" id="longBreak" name="longBreak" value="15">
+            </div>
+            <div>
+                <a href="#" onclick="Modal.close()" class="saveButton">Salvar</a>
+            </div>
+            <audio src="./audio/audio-clock-ok.mp3"></audio>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

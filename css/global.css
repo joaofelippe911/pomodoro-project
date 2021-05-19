@@ -1,0 +1,198 @@
+* {
+    margin: auto;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    background-color: #0085FF;
+}
+
+/* --- Header --- */
+
+header {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    background-color: #0085FF;
+    color: #FFF;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #000000;
+}
+
+.settings {
+    text-decoration: none;
+    color: #FFF;
+    background: #0085FF;
+    border: 1px solid #FFF;
+    padding: 10px;
+    border-radius: 100px;
+    transition: all 0.5s;
+}
+
+.settings:hover {
+    background: #196ab6;
+}
+
+.logo {
+    width: 75px;
+    background-color: #0085FF;
+}
+
+.headerText {
+    background:#0085FF;
+}
+
+/* --- Main --- */
+
+main {
+    width: 960px;
+    margin-top: 50px;
+}
+
+.options {
+    width: 50%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.options button {
+    display: inline-block;
+    border: 1px solid #eee;
+    margin-left: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #FFF;
+    font-weight: 400;
+    font-size: 1rem;
+    transition: all 0.5s;
+}
+
+.options button:hover {
+    background-color: #196ab6;
+    color: #FFF;
+}
+
+.highlight {
+    background: #144e85;
+}
+
+/* --- Play, Pause, Stop --- */
+
+.buttons {
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid #eee;
+    padding: 10px;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.5s;
+}
+
+.buttons:hover {
+    background: #196ab6;
+}
+
+.btns {
+    text-align: center;
+    padding: 20px;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* --- Timer --- */
+
+h1 {
+    width: 480px;
+    text-align: center;
+    font-size: 10rem;
+    padding: 15px;
+    color: #fff;
+    border: 0 solid;
+    border-radius: 5px;
+    background: #329cff;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* --- Modal --- */
+
+.modal-overlay {
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0,0,0,0.85);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    z-index: 999;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    background: #0085FF;
+    padding: 2.4rem;
+    position:relative;
+    z-index: 1;
+    border-radius: 10px;
+    left: 350px;
+    margin: 65px;
+}
+
+.modal label {
+    background: #0085FF;
+    color: #FFF;
+    justify-content: center;
+    max-width: 100px;
+    min-width: 100px;
+}
+
+.modal input {
+    background: #196ab6;
+    width: 100px;
+    border: 1px solid #fff;
+    color: #FFF;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.modal input:hover {
+    background: #1267b8;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.saveButton {
+    padding: 10px;
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    color: #FFF;
+    background: #0085FF;
+    text-decoration: none;
+}
+
+.saveButton:hover {
+    background: #196ab6;
+}
